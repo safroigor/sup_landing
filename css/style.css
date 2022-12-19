@@ -29,12 +29,14 @@ h1, h2, h3, h4, h5, h6 {
 /* HEADER */
 
 .container {
+    position: relative;
     max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
 .header {
+    position: relative;
     background-image: url(/images/header-bg.jpg);
     background-size: cover;
     background-position: center;
@@ -42,6 +44,37 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 57px;
     min-height: 100vh;
 }
+
+header::after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/header-decor.svg);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 456px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(45%);
+    z-index: 2;
+}
+
+header::before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/header-decor.svg);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 456px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(80%) rotate(180deg);
+    z-index: 3;
+}
+
 
 .header-top {
     display: flex;
@@ -83,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: flex-end;
 } */
 
-.header-content-box {
+.header-content {
     max-width: 548px;
     text-align: center;
     margin-right: 40px;
@@ -110,6 +143,46 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
 }
 
-.header-decor-text {
-    display: none;
+
+.header-decor-text-one {
+    position: absolute;
+    bottom: -335px;
+    right: 158px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 130px;
+    line-height: 1.115;
+    color: #0093A1;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.header-decor-text-two {
+    position: absolute;
+    bottom: -495px;
+    right: 582px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 130px;
+    line-height: 1.115;
+    color: #0093A1;
+    opacity: 0.3;
+    z-index: 4;
+}
+
+.header-decor-text-three {
+    position: absolute;
+    max-width: 360px;
+    bottom: -460px;
+    right: 150px;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1.218;
+    text-align: center;
+    color: #0093A1;
+    z-index: 4;
 }
