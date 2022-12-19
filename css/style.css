@@ -29,7 +29,6 @@ h1, h2, h3, h4, h5, h6 {
 /* HEADER */
 
 .container {
-    position: relative;
     max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
@@ -109,12 +108,13 @@ header::before {
     background-color: #B9C400; 
 }
 
-/* .header-content {
-    min-height: calc(100vh - 161px);
+.header-content-box {
+    position: relative;
+    min-height: calc(100vh - 62px);
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-} */
+}
 
 .header-content {
     max-width: 548px;
@@ -130,7 +130,7 @@ header::before {
 .header-title {
     font-size: 64px;
     line-height: 1.109;
-    margin-top: 262px;
+    margin-top: 300px;
     margin-bottom: 20px;
 }
 
@@ -146,8 +146,8 @@ header::before {
 
 .header-decor-text-one {
     position: absolute;
-    bottom: -335px;
-    right: 158px;
+    bottom: 70px;
+    right: 142px;
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 400;
@@ -160,7 +160,7 @@ header::before {
 
 .header-decor-text-two {
     position: absolute;
-    bottom: -495px;
+    bottom: -60px;
     right: 582px;
     font-family: 'Comfortaa';
     font-style: normal;
@@ -175,8 +175,8 @@ header::before {
 .header-decor-text-three {
     position: absolute;
     max-width: 360px;
-    bottom: -460px;
-    right: 150px;
+    bottom: -30px;
+    right: 135px;
     font-family: 'Inter';
     font-style: italic;
     font-weight: 300;
@@ -185,4 +185,96 @@ header::before {
     text-align: center;
     color: #0093A1;
     z-index: 4;
+}
+
+
+/* INFO */
+
+.main {
+}
+
+.info {
+    position: relative;
+    background-image: url(../images/info-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 130px;
+}
+
+.info::before {
+    position: absolute;
+    content: "";
+    background-color: #262C27;
+    height: 180px;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-170px);
+    z-index: 1;
+}
+
+.info-inner {
+}
+
+.info-top {
+    display: flex;
+    gap: 80px;
+    padding-top: 100px;
+}
+
+.info-top-text {
+    position: relative;
+    padding-top: 245px;
+    width: 290px;
+    color: #FFF;
+}
+
+.info-top-text-two {
+    padding-bottom: 125px;
+}
+
+.info-top-text-two {
+    border-bottom: 1px solid #FFF;
+}
+
+.popup-btn {
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.popup-btn span{
+    padding-top: 12px;
+    display: block;
+    color: #FFF;
+}
+
+.info-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.info-top-img {
+    z-index: 4;
+}
+
+.info-specs {
+}
+
+.info-specs-title {
+}
+
+.info-specs-list {
+}
+
+.info-specs-item {
+}
+ 
+.info-specs-caption {
+}
+
+.info-specs-text {
 }
