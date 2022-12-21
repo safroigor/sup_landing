@@ -31,6 +31,9 @@ ul {
     list-style: none;
 }
 
+img {
+    object-fit: cover;
+}
 
 /* HEADER */
 
@@ -247,6 +250,7 @@ header::before {
     border: none;
     cursor: pointer;
     background-color: transparent;
+    position: absolute;
 }
 
 .popup-btn span{
@@ -309,7 +313,7 @@ header::before {
 /* BUY */
 
 .buy {
-    padding: 150px 0;
+    padding: 150px 0 0;
 }
 
 .buy-inner {
@@ -396,5 +400,126 @@ header::before {
     background-image: url(../images/star.svg );
 }
 
-.buy-img {
+
+/* TECHNOLOGY */
+
+.technology {
+    margin-bottom: 150px;
+}
+
+.technology-top {
+    background-image: url(../images/tech-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.technology-top-inner {
+    position: relative;
+    min-height: 110vh;
+}
+
+.technology-top-box {
+    position: absolute;
+    left: 0;
+    bottom: 85px;
+}
+
+.popup-btn {
+}
+
+.technology-btn {
+    right: 350px;
+    top: 450px;
+}
+
+.technology-title {
+    max-width: 470px;
+    margin-bottom: 62px;
+    text-transform: uppercase;
+    font-family: 'Comfortaa';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1.116;
+    color: #262C27;
+}
+
+.technology-list {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.technology-list-item {
+    margin-bottom: 15px;
+    padding-left: 24px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #262C27
+}
+
+.technology-list-item:last-child {
+    margin-bottom: 0;
+}
+
+.gallery {
+}
+
+.gallery-inner {
+}
+
+.gallery-box {
+    display: flex;
+    gap: 68px;
+    margin-top: 115px;
+}
+
+.gallery-text {
+    max-width: 350px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.gallery-min {
+    position: relative;
+    display: grid;
+    gap: 24px 30px;
+    grid-template-columns: 481px 208px;
+    grid-template-rows: 432px 300px;
+    transform: translateY(-50%);
+    padding: 72px 31px 52px;
+}
+
+.gallery-min::before {
+    position: absolute;
+    content: "";
+    border: 3px solid #262C27;
+    border-radius: 200px 0px 300px;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.gallery-min-img--1 {
+    grid-column: 1 / 3;
+    border-radius: 400px 0px 0px 0px;
+}
+
+.gallery-min-img--2 {
+    border-radius: 0px 0px 0px 300px;
+}
+
+.gallery-min-img {
+}
+
+.gallery-max {
+}
+
+.gallery-max-img {
+}
+
+.gallery-max-text {
 }
