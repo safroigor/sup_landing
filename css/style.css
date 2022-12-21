@@ -320,6 +320,7 @@ header::before {
 
 .buy-content {
     max-width: 510px;
+    position: relative;
 }
 
 .buy-text-wrapper {
@@ -371,9 +372,28 @@ header::before {
     color: #0093A1;
     border: 2px solid #0093A1;
     cursor: pointer;
+    transition: all .3s;
+}
+
+.buy-btn:hover {
+    background-color: #B9C400;
+    border-color: #B9C400;
+    color: #262C27;
 }
 
 .buy-price {
+    position: absolute;
+    right: 20px;
+    bottom: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 201px;
+    height: 199px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.2;
+    background-image: url(../images/star.svg );
 }
 
 .buy-img {
