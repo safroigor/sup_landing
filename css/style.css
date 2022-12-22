@@ -220,9 +220,6 @@ header::before {
     z-index: 1;
 }
 
-.info-inner {
-}
-
 .info-top {
     display: flex;
     gap: 80px;
@@ -323,10 +320,6 @@ header::before {
     width: 185px;
 
 }
-
-.info-specs-text {
-}
-
 
 
 /* BUY */
@@ -482,12 +475,6 @@ header::before {
     margin-bottom: 0;
 }
 
-.gallery {
-}
-
-.gallery-inner {
-}
-
 .gallery-box {
     display: flex;
     gap: 68px;
@@ -533,9 +520,6 @@ header::before {
     border-radius: 0px 0px 0px 300px;
 }
 
-.gallery-min-img {
-}
-
 .gallery-max {
     display: grid;
     gap: 20px;
@@ -566,9 +550,6 @@ header::before {
     border-radius: 0px 0px 0px 400px;
 }
 
-.gallery-max-img {
-}
-
 .gallery-max-text {
     display: flex;
     align-items: center;
@@ -596,9 +577,6 @@ header::before {
     padding: 100px 0 83px;
     background-color: #262C27;
     color: #FFF;
-}
-
-.footer-inner {
 }
 
 .footer-top {
@@ -676,9 +654,6 @@ header::before {
     margin-bottom: 50px;
 }
 
-.footer-gallery-item {
-}
-
 .footer-menu-list {
     display: flex;
     justify-content: space-between;
@@ -686,8 +661,68 @@ header::before {
     text-transform: uppercase;
 }
 
-.footer-menu-item {
+
+@media (max-width: 1230px) {
+    .header-decor-text-two {
+        left: 0;    
+    }
 }
 
-.footer-menu-link {
+@media (max-width: 1000px) {
+    .info-top {
+        display: block;
+    }
+
+    .info-top-text {
+        width: 100%;
+    }
+
+    .info-top-text-two {
+        padding-top: 45px;
+        padding-bottom: 25px;
+    }
+
+    .info-top-img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .info-specs {
+        display: block;
+    }
+
+    .info-specs-title {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 720px) {
+    .header-top {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .header-btn {
+        width: 90%;
+    }
+
+    .header-decor-text-one,
+    .header-decor-text-two,
+    .header-decor-text-three {
+        display: none;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .header-content {
+        margin-right: 0;
+    }
+
+    .header-title {
+        font-size: 55px;    
+    }
+
 }
