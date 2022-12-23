@@ -222,20 +222,20 @@ header::before {
 
 .info-top {
     display: flex;
+    position: relative;
     gap: 80px;
     padding-top: 100px;
     margin-bottom: 597px;
 }
 
 .info-top-text {
-    position: relative;
     padding-top: 245px;
     width: 290px;
     color: #FFF;
 }
 
 .info-top-text-two {
-    padding-bottom: 125px;
+    padding-bottom: 30px;
 }
 
 .info-top-text-two {
@@ -277,7 +277,7 @@ header::before {
 .info-btn {
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 220px;
 }
 
 .info-top-img {
@@ -663,12 +663,38 @@ header::before {
 
 
 @media (max-width: 1230px) {
+
     .header-decor-text-two {
         left: 0;    
+    }
+
+    .buy-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .buy-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .buy-price {
+    pointer-events: none;
+    }
+
+    .buy-img {
+        order: -1;
+        max-width: 100%;
+    }
+
+    .buy-text-wrapper {
+        width: 100%;
+        max-width: 600px;
     }
 }
 
 @media (max-width: 1000px) {
+
     .info-top {
         display: block;
     }
@@ -694,9 +720,24 @@ header::before {
     .info-specs-title {
         margin-bottom: 25px;
     }
+
+    .info-btn {
+        bottom: 500px;
+        left: 0;
+    }
+}
+
+@media (max-width: 840px) {
+
+    .buy-price {
+        top: -250px;
+        left: 0;
+    }
+
 }
 
 @media (max-width: 720px) {
+
     .header-top {
         justify-content: center;
         flex-wrap: wrap;
@@ -715,6 +756,21 @@ header::before {
 
 }
 
+@media (max-width: 630px) {
+    
+    .info-specs-list{
+        width: 100%;
+    }
+
+    .info-specs-item {
+        display: block;
+    }
+
+    .buy-title {
+        font-size: 48px;
+    }
+}
+
 @media (max-width: 375px) {
 
     .header-content {
@@ -723,6 +779,11 @@ header::before {
 
     .header-title {
         font-size: 55px;    
+    }
+
+    .info-btn {
+        bottom: 250px;
+        left: 50px;
     }
 
 }
