@@ -1,1 +1,1 @@
-# sup_landing
+# https://safroigor.github.io/sup_landing/
