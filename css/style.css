@@ -45,7 +45,7 @@ img {
 
 .header {
     position: relative;
-    background-image: url(/images/header-bg.jpg);
+    background-image: url(/images/header_BG.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
